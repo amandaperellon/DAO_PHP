@@ -22,18 +22,28 @@ require_once("config.php");
 // echo $root;
 
 
+//autenticação
+// $usuario = new Usuario();
+// $usuario->login("Camila", "998");
+// echo $usuario;
+
+//Inserindo uma linha na tabela
+// $aluno = new Usuario("Pedro", "pepe44");
+// $aluno->insert();
+// echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("Camila", "998");
+$usuario->loadById(1);
+$usuario->update("Jade", "jadinha");
 echo $usuario;
 
 
+
+//modo manual
 // $sql = new Sql();
 
 // $usuarios = $sql->select("SELECT * FROM tb_usuario");
 
 // echo json_encode($usuarios);
-
-
-
 
 ?>
