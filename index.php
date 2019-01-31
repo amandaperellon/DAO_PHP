@@ -5,10 +5,26 @@ error_reporting(E_ALL);
 
 require_once("config.php");
 
-$root = new Usuario();
-$root->loadById(2);
-echo $root;
 
+//carrega uma lista de usuários
+// $list = Usuario::getList();
+// echo json_encode($list);
+
+
+//carrega uma lista de usuários pelo login
+// $login = Usuario::search("a");
+// echo json_encode($login);
+
+
+//carrega um usuário
+// $root = new Usuario();
+// $root->loadById(2);
+// echo $root;
+
+
+$usuario = new Usuario();
+$usuario->login("Camila", "998");
+echo $usuario;
 
 
 // $sql = new Sql();
