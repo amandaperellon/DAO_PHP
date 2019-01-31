@@ -32,12 +32,17 @@ require_once("config.php");
 // $aluno->insert();
 // echo $aluno;
 
+
+//Editando uma coluna
+// $usuario = new Usuario();
+// $usuario->loadById(1);
+// $usuario->update("Jade", "jadinha");
+// echo $usuario;
+
 $usuario = new Usuario();
-$usuario->loadById(1);
-$usuario->update("Jade", "jadinha");
+$usuario->loadById(2);
+$usuario->delete();
 echo $usuario;
-
-
 
 //modo manual
 // $sql = new Sql();
